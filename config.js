@@ -1,4 +1,2 @@
-/* Checkout endpoint. Leave empty until a live payment URL exists.
-   Buy buttons read this constant. An empty string shows an inline note
-   instead of sending anyone to a fake payment page. */
-var CHECKOUT_URL = '';
+/* Checkout endpoint. Buy buttons read this constant. */
+var CHECKOUT_URL = 'https://whop.com/checkout/plan_XLSK8EnDfYsZN';
