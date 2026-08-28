@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contractor Ledger 2026 — 1099 income, expenses, mileage, quarterly organizer</title>
+  <meta name="description" content="A $29 one-time Excel and Google Sheets workbook for US independent contractors. Log 1099 income, Schedule C–style expenses, mileage, and a quarterly estimated-tax figure. Organizer, not tax advice.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html">
+        <strong>Contractor Ledger</strong>
+        <span>2026 organizer</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="index.html" aria-current="page">Product</a>
+        <a href="2026-estimated-tax-due-dates.html">Due dates</a>
+        <a href="how-to-calculate-quarterly-taxes-freelancer.html">Quarterly</a>
+        <a href="schedule-c-expense-categories.html">Expenses</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Excel + Google Sheets · tax year 2026</p>
+          <h1>A workbook for 1099 income, expenses, mileage, and the next voucher date.</h1>
+          <p class="lede">Contractor Ledger is a one-time $29 organizer for US independent contractors. It is not tax advice, not a CPA product, and not a substitute for Form 1040-ES.</p>
+          <div class="buy-wrap">
+            <div class="btn-row">
+              <button type="button" class="btn" data-buy>Get the 2026 workbook — $29</button>
+              <a class="btn btn-ghost" href="#whats-in-the-file">What’s in the file</a>
+            </div>
+            <p class="fine">One-time. You keep the 2026 files. Personal use, no resale. Instant download when checkout is live.</p>
+          </div>
+        </div>
+        <figure class="shot">
+          <img src="img/dashboard.png" width="1492" height="911" alt="Product preview of the Contractor Ledger 2026 quarterly dashboard (illustration, not a live Excel screenshot).">
+          <figcaption>Product preview of the quarterly dashboard — an illustration of layout and labels, not a live Excel screenshot.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <section aria-labelledby="hook">
+      <div class="wrap">
+        <p class="kicker" id="hook">Form 1040-ES printed dates</p>
+        <h2>Q3 is September 15, 2026.</h2>
+        <p class="lede">The IRS prints four estimated-tax dates on Form 1040-ES (2026). This file does not pay the IRS for you. It keeps the logs and a transparent workup so you can read a figure before you send money yourself.</p>
+        <div class="dates">
+          <article class="date-card">
+            <span class="q">Q1</span>
+            <span class="when">Apr 15, 2026</span>
+            <span class="period">Income Jan 1–Mar 31</span>
+          </article>
+          <article class="date-card">
+            <span class="q">Q2</span>
+            <span class="when">Jun 15, 2026</span>
+            <span class="period">Income Apr 1–May 31</span>
+          </article>
+          <article class="date-card hook">
+            <span class="q">Q3 · next for many</span>
+            <span class="when">Sep 15, 2026</span>
+            <span class="period">Income Jun 1–Aug 31</span>
+          </article>
+          <article class="date-card">
+            <span class="q">Q4</span>
+            <span class="when">Jan 15, 2027</span>
+            <span class="period">Income Sep 1–Dec 31</span>
+          </article>
+        </div>
+        <p class="fine" style="margin-top:1rem;">Dates as printed on Form 1040-ES (2026). The January 15, 2027 payment is not required if you file the 2026 return by February 1, 2027 and pay the balance with the return — see the form. <a href="2026-estimated-tax-due-dates.html">All four dates, footnotes, and how to pay the IRS</a>.</p>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="problem">
+      <div class="wrap">
+        <p class="kicker">The problem</p>
+        <h2 id="problem">Invoices in email. Receipts in a camera roll. A voucher date on the calendar.</h2>
+        <div class="card-grid cols-3">
+          <article class="card">
+            <h3>Income is uneven</h3>
+            <p>1099-NEC, 1099-K, and unpaid invoices sit in different places. Pending work still belongs in a planning figure. This file logs Paid and Pending on the same Income tab.</p>
+          </article>
+          <article class="card">
+            <h3>Schedule C is picky</h3>
+            <p>Groceries mixed with client dinners do not survive a category review. Expenses uses Schedule C–style labels, and meals follow an editable deductible percent on Setup.</p>
+          </article>
+          <article class="card">
+            <h3>2026 has two mileage rates</h3>
+            <p>Business standard mileage is 72.5¢/mi from January 1–June 30 (IRS IR-2025-128) and 76¢/mi from July 1–December 31 (IRS IR-2026-29). Both cells are yellow and user-editable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="whats-in-the-file" aria-labelledby="tabs">
+      <div class="wrap">
+        <p class="kicker">Seven tabs · no macros · no VBA</p>
+        <h2 id="tabs">What’s in the file</h2>
+        <p class="lede">One .xlsx. Open it in Excel, or upload it to Drive and make a Google Sheets copy. Yellow cells are inputs. Blue-gray cells are formulas.</p>
+        <div class="tab-list">
+          <div class="tab-row"><strong>How to Use</strong><span>Eight steps, color legend, IRS links, license in brief. Read once.</span></div>
+          <div class="tab-row"><strong>Setup</strong><span>Filing status, 2025 tax, AGI over/under the safe-harbor line, editable 2026 brackets, SE rates, mileage, meals percent. Every sourced number has a source note.</span></div>
+          <div class="tab-row"><strong>Income</strong><span>Date, payer, 1099-NEC / 1099-K / other, amount, Paid or Pending. Sixty-five empty rows. Totals at the bottom.</span></div>
+          <div class="tab-row"><strong>Expenses</strong><span>Date, vendor, Schedule C–style category, amount. Meals use the Setup percent (pre-filled 50%, labeled as a user assumption). <a href="schedule-c-expense-categories.html">Category list</a>.</span></div>
+          <div class="tab-row"><strong>Mileage</strong><span>Date, miles, business purpose. Amount = miles × the IRS business rate for that date. Do not also claim actual car expenses for the same vehicle and period.</span></div>
+          <div class="tab-row"><strong>Quarterly</strong><span>YTD net, SE workup, simplified income tax from the visible bracket table, SEND THIS QUARTER, countdown to printed 1040-ES dates. Record what you actually paid in yellow cells.</span></div>
+          <div class="tab-row"><strong>Sample</strong><span>Three months of freelance-designer demo data plus a live illustration. It does not feed your working logs. Safe to ignore or delete.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="who">
+      <div class="wrap">
+        <div class="card-grid cols-2">
+          <div>
+            <p class="kicker">Who it’s for</p>
+            <h2 id="who">US independent contractors who want records they keep.</h2>
+            <ul>
+              <li>People who receive 1099-NEC, 1099-K, or similar self-employment receipts and expect to file Schedule C.</li>
+              <li>Sole proprietors who already live in Excel or Google Sheets and do not want another login.</li>
+              <li>Anyone who wants to hand a tidy log to a CPA, EA, or tax attorney — or sit down with Form 1040-ES and Pub. 505 with numbers in one place.</li>
+            </ul>
+          </div>
+          <div>
+            <p class="kicker">Who it is not for</p>
+            <h2>Not a filing service. Not a determination of tax.</h2>
+            <ul>
+              <li>W-2-only employees with no self-employment activity.</li>
+              <li>Partnerships, S corporations, or anyone who needs us to e-file, represent them, or send money to the IRS.</li>
+              <li>Anyone who needs this workbook to decide what they owe. It does not calculate what you owe the IRS. Figures on Quarterly are an organizer workup using rates you can see and edit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="buy">
+      <div class="wrap">
+        <div class="price-block">
+          <div>
+            <p class="kicker" id="buy">One-time purchase</p>
+            <p class="price-num">$29 <span>USD</span></p>
+            <p>You keep the 2026 Excel file (and a Google Sheets copy you make). There is no subscription and no “lifetime access.” Updates for later tax years are not promised.</p>
+            <p class="fine">License: personal use for your own 2026 records. You may give a copy to a tax professional you hire. No resale, no redistribution, no rebranding as a product.</p>
+          </div>
+          <div class="card">
+            <h3>What you download</h3>
+            <ul>
+              <li>Contractor-Ledger-2026.xlsx — seven tabs, formulas, no macros.</li>
+              <li>A short setup PDF with the same eight steps, pay-the-IRS links, license, and refund rule.</li>
+            </ul>
+            <div class="buy-wrap">
+              <button type="button" class="btn" data-buy>Buy Contractor Ledger — $29</button>
+            </div>
+            <p class="fine" style="margin-top:0.85rem;"><strong>Refunds.</strong> File defect (corrupt, truncated, will not open in current Excel or as a Google Sheets upload) = we replace the file. Change of mind = no. This is an instant digital download.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="faq">
+      <div class="wrap">
+        <p class="kicker">FAQ</p>
+        <h2 id="faq">Straight answers</h2>
+        <div class="faq">
+          <details>
+            <summary>Is this tax advice?</summary>
+            <p>No. Nothing on this site or in the workbook is legal, tax, or accounting advice. We are not your CPA, EA, or attorney. We do not prepare returns and we do not represent you before the IRS. Use Form 1040-ES, Pub. 505, and a tax professional.</p>
+          </details>
+          <details>
+            <summary>Will SEND THIS QUARTER match Form 1040-ES?</summary>
+            <p>Not necessarily, and we do not claim it will. The workbook omits QBID, Additional Medicare Tax, NIIT, AMT, most credits, self-employed health insurance, retirement contributions (unless you type a number into Other deductions), annualized-income installments, and several other items. Required annual in the file follows the lesser of a 90% current-year path and a 100%/110% prior-year path as a convenience. That is not your IRS bill. <a href="how-to-calculate-quarterly-taxes-freelancer.html">How the workup is structured</a>.</p>
+          </details>
+          <details>
+            <summary>Excel and Google Sheets?</summary>
+            <p>Yes. Excel: open the .xlsx, then File → Save As a working copy. Google Sheets: upload to Drive, open, then File → Make a copy. Named ranges, SUMIF, and SUMPRODUCT are Sheets-safe. Sheet protection may not transfer; yellow still means type, blue-gray still means formula. No macros and no VBA.</p>
+          </details>
+          <details>
+            <summary>What if the IRS changes a 2026 rate after I buy?</summary>
+            <p>Edit the yellow cells on Setup. Mileage, brackets, the Social Security wage base, and the standard deduction are not hidden in code. Mileage sources: IRS IR-2025-128 (72.5¢, Jan 1–Jun 30 2026) and IRS IR-2026-29 (76¢, Jul 1–Dec 31 2026), both user-editable.</p>
+          </details>
+          <details>
+            <summary>Do you file or pay the IRS for me?</summary>
+            <p>No. When you decide to pay estimated tax, pay the IRS yourself. Two electronic options the IRS describes: <a href="https://www.irs.gov/payments/direct-pay">IRS Direct Pay</a> and <a href="https://www.eftps.gov/">EFTPS</a>. Those links are how to pay the IRS, not a filing service we operate.</p>
+          </details>
+          <details>
+            <summary>Refunds and license?</summary>
+            <p>File defect = replace. Change of mind = no, because this is an instant download. Personal use, no resale. You may keep archival copies and share a copy with a tax pro you hire for your own 2026 return. Do not post the file or sell copies.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="disclaimer">
+    <div class="wrap cols">
+      <div>
+        <h2>Organizer, not tax advice</h2>
+        <p>Contractor Ledger 2026 is an organizer for income, Schedule C–style expenses, mileage, and a quarterly estimated-tax figure. It is not tax advice. It is not a CPA, EA, or attorney product. It is not a substitute for IRS Form 1040-ES, Publication 505, Schedule C, Schedule SE, Form 1040, or a tax professional. It does not calculate what you owe the IRS. If a cell in the workbook disagrees with the IRS, the IRS wins.</p>
+        <p>How to pay the IRS (we do not file or send money for you): <a href="https://www.irs.gov/payments/direct-pay">IRS Direct Pay</a> · <a href="https://www.eftps.gov/">EFTPS</a>. Forms: <a href="https://www.irs.gov/pub/irs-pdf/f1040es.pdf">Form 1040-ES (PDF)</a> · <a href="https://www.irs.gov/forms-pubs/about-publication-505">About Pub. 505</a> · <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates">Standard mileage rates</a>.</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="index.html" aria-current="page">Product</a>
+        <a href="2026-estimated-tax-due-dates.html">2026 estimated-tax due dates</a>
+        <a href="how-to-calculate-quarterly-taxes-freelancer.html">Quarterly taxes for freelancers</a>
+        <a href="schedule-c-expense-categories.html">Schedule C expense categories</a>
+      </nav>
+    </div>
+    <div class="wrap legal">
+      Contractor Ledger 2026 · $29 one-time · personal use, no resale · you keep the 2026 files · no lifetime-access claim. File defect = replace; change of mind = no.
+    </div>
+  </footer>
+  <script src="config.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

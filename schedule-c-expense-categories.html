@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule C expense categories for 1099 contractors — organizer labels</title>
+  <meta name="description" content="The Schedule C–style expense categories in Contractor Ledger 2026, plus meals percent and the mileage vs. actual-car note. Simplified labels, not a deductibility ruling. Not tax advice.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html">
+        <strong>Contractor Ledger</strong>
+        <span>2026 organizer</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="index.html">Product</a>
+        <a href="2026-estimated-tax-due-dates.html">Due dates</a>
+        <a href="how-to-calculate-quarterly-taxes-freelancer.html">Quarterly</a>
+        <a href="schedule-c-expense-categories.html" aria-current="page">Expenses</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap article-hero">
+      <p class="eyebrow">Expenses tab · 13 labels</p>
+      <h1>Schedule C–style expense categories</h1>
+      <p class="lede">These are the dropdown names in Contractor Ledger. They follow simplified Schedule C line labels so a year of receipts is not a pile of “misc.” They are not a ruling that a cost is deductible.</p>
+    </div>
+
+    <div class="wrap article">
+      <p>Schedule C is the IRS profit-or-loss form for most sole proprietors. Contractor Ledger is not Schedule C, does not prepare Schedule C, and does not decide ordinary-and-necessary, capitalization, or mixed-use questions. Keep receipts. Hand the log to a tax professional, or sit down with the IRS instructions yourself.</p>
+      <p>On the Expenses tab: date, vendor, category, amount. A formula writes Deductible. For every category except Meals, deductible = amount. For Meals, deductible = amount × the Setup meals percent (yellow cell, pre-filled 50%, labeled as a user assumption — not a 2026 inflation figure). Nothing is auto-halved without that cell.</p>
+
+      <div class="cat" style="margin:1.5rem 0;">
+        <article>
+          <h3>Advertising</h3>
+          <p>Client-facing promotion you choose to log as advertising rather than a general office cost. The file does not split personal/business for you.</p>
+        </article>
+        <article>
+          <h3>Car and truck expenses</h3>
+          <p>Actual vehicle costs (gas, repairs, and similar) if you are <em>not</em> using the standard mileage method for that vehicle and period. If you log miles on the Mileage tab, do not also put the same car’s actual costs here. The workbook will not stop you; a note on both tabs warns you.</p>
+        </article>
+        <article>
+          <h3>Contract labor</h3>
+          <p>Amounts paid to other contractors. Issuing 1099s, worker classification, and payroll are outside this file.</p>
+        </article>
+        <article>
+          <h3>Depreciation</h3>
+          <p>A number you type after you (or a pro) have a depreciation figure. The workbook is not a depreciation engine and does not compute section 179 or bonus depreciation.</p>
+        </article>
+        <article>
+          <h3>Insurance</h3>
+          <p>Business insurance premiums you choose to log here. Self-employed health insurance is not modeled as its own adjustment unless you put a figure in Setup → Other deductions — and even then it is just a number you typed.</p>
+        </article>
+        <article>
+          <h3>Legal and professional services</h3>
+          <p>Accountants, lawyers, bookkeepers, and similar professional fees you treat as a business expense.</p>
+        </article>
+        <article>
+          <h3>Office expense</h3>
+          <p>Consumable office costs that are not supplies, rent, or utilities in your own sorting habit. The label is for your consistency, not an IRS reclassification.</p>
+        </article>
+        <article>
+          <h3>Rent or lease</h3>
+          <p>Business rent or equipment leases you choose to record. Home-office exclusive-use tests are not in this file.</p>
+        </article>
+        <article>
+          <h3>Supplies</h3>
+          <p>Materials and supplies used in the work. Inventory / COGS accounting is not modeled.</p>
+        </article>
+        <article>
+          <h3>Travel</h3>
+          <p>Business travel costs other than meals. Meals while traveling still belong in Meals so the Setup percent can apply.</p>
+        </article>
+        <article>
+          <h3>Meals</h3>
+          <p>The only category with a haircut in the file. Deductible = amount × Setup meals percent. Pre-filled 50% because Schedule C meals are generally 50% deductible; the cell is a user-editable assumption. If a meal is fully non-deductible, do not log it, or set the percent with your tax pro’s guidance — we do not give that guidance.</p>
+        </article>
+        <article>
+          <h3>Utilities</h3>
+          <p>Business utilities you allocate yourself. The file does not compute a home-office percentage.</p>
+        </article>
+        <article>
+          <h3>Other expenses</h3>
+          <p>A catch-all with a notes column. Use it when a cost does not fit the labels above, then review it before you copy totals onto a return.</p>
+        </article>
+      </div>
+
+      <h2>Mileage is a separate tab on purpose</h2>
+      <p>Standard mileage lives on Mileage, not in the Expenses dropdown. Enter date, miles, and a business purpose you would recognize later. Amount = miles × the official IRS business rate for that date:</p>
+      <table>
+        <thead>
+          <tr><th>Period</th><th>Business rate</th><th>Source</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jan 1–Jun 30, 2026</td>
+            <td>72.5¢ per mile</td>
+            <td>IRS IR-2025-128, via the <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates">standard mileage rates</a> page</td>
+          </tr>
+          <tr>
+            <td>Jul 1–Dec 31, 2026</td>
+            <td>76¢ per mile</td>
+            <td>IRS IR-2026-29, same IRS page</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Both rates are yellow on Setup. Rows dated before July 1, 2026 use the first-half rate; on or after July 1 they use the second-half rate. Do not claim both standard mileage and actual car expenses for the same vehicle and period.</p>
+
+      <h2>Income is also a separate tab</h2>
+      <p>Income types in the file: 1099-NEC, 1099-K, 1099-MISC, Invoice/other, Other. Paid vs Pending. Pending amounts count toward the Quarterly estimate because they are expected. Do not paste W-2 wages into Income; optional Social Security wages belong on Setup so they can reduce the remaining SE wage base.</p>
+
+      <h2>What to do with the totals</h2>
+      <p>At year-end, export or print the logs. Give them to a tax professional, or use them while completing Schedule C and Form 1040-ES yourself. The Quarterly tab’s SEND THIS QUARTER figure is an organizer convenience, not a substitute for those forms. <a href="how-to-calculate-quarterly-taxes-freelancer.html">How the quarterly workup is structured</a>.</p>
+
+      <div class="card buy-wrap" style="margin:1.5rem 0 2rem;">
+        <p class="kicker">Contractor Ledger 2026</p>
+        <h2>Categories, mileage, and a voucher figure in one .xlsx</h2>
+        <p>$29 one-time. Excel + Google Sheets. You keep the 2026 files. Personal use, no resale. Organizer, not tax advice.</p>
+        <button type="button" class="btn" data-buy>Get the workbook — $29</button>
+        <p class="fine"><a href="index.html">Full product page</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="disclaimer">
+    <div class="wrap cols">
+      <div>
+        <h2>Organizer, not tax advice</h2>
+        <p>Contractor Ledger 2026 is an organizer for income, Schedule C–style expenses, mileage, and a quarterly estimated-tax figure. It is not tax advice. It is not a CPA, EA, or attorney product. It is not a substitute for IRS Form 1040-ES, Publication 505, Schedule C, Schedule SE, Form 1040, or a tax professional. It does not calculate what you owe the IRS. If a cell in the workbook disagrees with the IRS, the IRS wins.</p>
+        <p>How to pay the IRS (we do not file or send money for you): <a href="https://www.irs.gov/payments/direct-pay">IRS Direct Pay</a> · <a href="https://www.eftps.gov/">EFTPS</a>. Forms: <a href="https://www.irs.gov/pub/irs-pdf/f1040es.pdf">Form 1040-ES (PDF)</a> · <a href="https://www.irs.gov/forms-pubs/about-publication-505">About Pub. 505</a> · <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates">Standard mileage rates</a>.</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="index.html">Product</a>
+        <a href="2026-estimated-tax-due-dates.html">2026 estimated-tax due dates</a>
+        <a href="how-to-calculate-quarterly-taxes-freelancer.html">Quarterly taxes for freelancers</a>
+        <a href="schedule-c-expense-categories.html" aria-current="page">Schedule C expense categories</a>
+      </nav>
+    </div>
+    <div class="wrap legal">
+      Contractor Ledger 2026 · $29 one-time · personal use, no resale · you keep the 2026 files · no lifetime-access claim. File defect = replace; change of mind = no.
+    </div>
+  </footer>
+  <script src="config.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

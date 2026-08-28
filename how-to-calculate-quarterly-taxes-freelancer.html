@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to calculate quarterly taxes as a freelancer — organizer notes, not advice</title>
+  <meta name="description" content="How US freelancers typically approach quarterly estimated tax: Form 1040-ES dates, the 90% / safe-harbor structure, SE tax sketch, and what Contractor Ledger’s workup includes and omits. Not tax advice.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html">
+        <strong>Contractor Ledger</strong>
+        <span>2026 organizer</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="index.html">Product</a>
+        <a href="2026-estimated-tax-due-dates.html">Due dates</a>
+        <a href="how-to-calculate-quarterly-taxes-freelancer.html" aria-current="page">Quarterly</a>
+        <a href="schedule-c-expense-categories.html">Expenses</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap article-hero">
+      <p class="eyebrow">Read with Form 1040-ES and Pub. 505</p>
+      <h1>How to calculate quarterly taxes as a freelancer</h1>
+      <p class="lede">A map of the published IRS structure, plus what a $29 organizer will and will not do. This is not a method for deciding what you owe, and it is not tax advice.</p>
+    </div>
+
+    <div class="wrap article">
+      <h2>Start with the form, not a spreadsheet</h2>
+      <p>US self-employed people who expect to owe tax as they go generally use <a href="https://www.irs.gov/pub/irs-pdf/f1040es.pdf">Form 1040-ES</a> and <a href="https://www.irs.gov/forms-pubs/about-publication-505">Publication 505</a>. Those documents — or a CPA, EA, or tax attorney — decide whether you must pay estimated tax and how to figure it. Contractor Ledger is an organizer: income, expenses, mileage, and a transparent running workup. It does not calculate what you owe the IRS.</p>
+      <p>Form 1040-ES (2026) states a general rule that includes an informational $1,000 estimated-tax threshold. The workbook displays that threshold. It does not apply it as a yes/no for you.</p>
+
+      <h2>The four 2026 voucher dates</h2>
+      <p>As printed: April 15, June 15, September 15, 2026, and January 15, 2027. Q3 — September 15, 2026 — is the date that lands on summer invoices. The January 15, 2027 payment is not required if you file the 2026 return by February 1, 2027 and pay the balance with the return (form footnote). <a href="2026-estimated-tax-due-dates.html">Dates, weekdays, and how to pay the IRS</a>.</p>
+
+      <h2>Two paths on the form (structure only)</h2>
+      <p>Form 1040-ES (2026) describes, in the General Rule, paying at least the lesser of:</p>
+      <ul>
+        <li>90% of the tax shown on the current-year return, or</li>
+        <li>100% of the tax shown on the prior-year return (110% if 2025 AGI was more than $150,000, or $75,000 if your 2026 status is married filing separately).</li>
+      </ul>
+      <p>People call the second path a “safe harbor.” The names are informal. The form is the source. Contractor Ledger uses that <em>structure</em> as a convenience: required annual = the lesser of 90% of this organizer’s federal estimate and 100% or 110% of the 2025 tax you typed. If prior-year tax is blank or 0, only the 90% path is used. That is not a finding that you met a safe harbor.</p>
+
+      <h2>A sketch of self-employment tax (as the form lays it out)</h2>
+      <p>On Form 1040-ES (2026), net earnings from self-employment start at 92.35% of net profit. Medicare (HI) is 2.9% of that base. Social Security (OASDI) is 12.4% of the lesser of that base and the remaining wage base. Combined, those two rates are 15.3%. Half of SE tax is deductible on the SE worksheet. The 2026 Social Security maximum income printed on the form is $184,500.</p>
+      <p>The organizer follows those percents in visible Setup cells. It does not model Additional Medicare Tax (0.9%), two-spouse SE figured separately, or farming/fishing special rules.</p>
+
+      <h2>Then a simplified income-tax workup</h2>
+      <p>After half of SE tax, optional “other deductions” you type, and the 2026 standard deduction for the filing status you picked, the file reads federal income tax from a visible 2026 rate schedule copied from Form 1040-ES page 10 / Rev. Proc. 2025-32. Organizer federal = that income tax + SE tax. Credits, QBID, AMT, NIIT, itemized-deduction limitation, OBBBA-era extras, and most adjustments are omitted — not estimated at zero. They are simply not there.</p>
+      <p>2026 standard deduction amounts shipped on Setup (Form 1040-ES chart): Single $16,100; married filing separately $16,100; head of household $24,150; married filing jointly or qualifying surviving spouse $32,200. They are yellow. Edit them if the IRS publishes a correction.</p>
+
+      <h2>What Contractor Ledger actually computes</h2>
+      <ol>
+        <li>YTD net = logged income − deductible expenses − mileage amount.</li>
+        <li>Net used = Setup expected annual net if you filled it in; otherwise YTD net. Early in the year, YTD understates a full year — type an expected net if you are planning ahead.</li>
+        <li>SE base = max(0, net used) × 92.35%.</li>
+        <li>Medicare = SE base × 2.9%. Social Security = min(SE base, $184,500 − optional W-2 wages) × 12.4%.</li>
+        <li>Half SE deduction, standard deduction, tax from the visible bracket table.</li>
+        <li>Required annual = lesser of the 90% path and the prior-year path, with the blank/zero fallback above.</li>
+        <li>SEND THIS QUARTER = round(required × N/4 − payments you logged), where N is 1–4 through the next printed due date. Catch-up is built in. ROUND to whole dollars for the voucher. Not your IRS bill.</li>
+      </ol>
+      <p>The Sample tab uses demo numbers (including a $6,400 prior-year tax and a $60,000 expected net) so you can see the formulas move. Sample does not feed Income, Expenses, Mileage, or Quarterly.</p>
+
+      <div class="note">
+        <strong>Omitted on purpose.</strong> QBID (including 2026 minimum QBID notes on 1040-ES), Additional Medicare Tax, NIIT, AMT, credits, withholding, SE health insurance, retirement plans unless typed into Other deductions, annualized income installments (Pub. 505 / Form 2210 Schedule AI), dual-status / nonresident / household employment taxes. A state line is net times a rate you type — not a state return.
+      </div>
+
+      <h2>Mileage and meals change the net before any of that</h2>
+      <p>2026 business standard mileage: 72.5¢ per mile January 1–June 30 (IRS IR-2025-128) and 76¢ per mile July 1–December 31 (IRS IR-2026-29). Both rates are user-editable on Setup. Do not also log actual car and truck expenses for the same vehicle and period. Meals use a Setup percent pre-filled at 50% and labeled as a user assumption — nothing is auto-halved without that cell. <a href="schedule-c-expense-categories.html">Expense categories</a>.</p>
+
+      <h2>Pay the IRS yourself</h2>
+      <p>How to pay the IRS, not a filing service we operate: <a href="https://www.irs.gov/payments/direct-pay">Direct Pay</a> and <a href="https://www.eftps.gov/">EFTPS</a>. Type what you sent into the yellow Quarterly payment cells so the next voucher figure can subtract it.</p>
+
+      <div class="card buy-wrap" style="margin:1.5rem 0 2rem;">
+        <p class="kicker">Contractor Ledger 2026</p>
+        <h2>The workup, next to the logs</h2>
+        <p>$29 one-time Excel + Google Sheets workbook. You keep the 2026 files. Not tax advice. Personal use, no resale.</p>
+        <button type="button" class="btn" data-buy>Get the workbook — $29</button>
+        <p class="fine"><a href="index.html">Full product page</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="disclaimer">
+    <div class="wrap cols">
+      <div>
+        <h2>Organizer, not tax advice</h2>
+        <p>Contractor Ledger 2026 is an organizer for income, Schedule C–style expenses, mileage, and a quarterly estimated-tax figure. It is not tax advice. It is not a CPA, EA, or attorney product. It is not a substitute for IRS Form 1040-ES, Publication 505, Schedule C, Schedule SE, Form 1040, or a tax professional. It does not calculate what you owe the IRS. If a cell in the workbook disagrees with the IRS, the IRS wins.</p>
+        <p>How to pay the IRS (we do not file or send money for you): <a href="https://www.irs.gov/payments/direct-pay">IRS Direct Pay</a> · <a href="https://www.eftps.gov/">EFTPS</a>. Forms: <a href="https://www.irs.gov/pub/irs-pdf/f1040es.pdf">Form 1040-ES (PDF)</a> · <a href="https://www.irs.gov/forms-pubs/about-publication-505">About Pub. 505</a> · <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates">Standard mileage rates</a>.</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="index.html">Product</a>
+        <a href="2026-estimated-tax-due-dates.html">2026 estimated-tax due dates</a>
+        <a href="how-to-calculate-quarterly-taxes-freelancer.html" aria-current="page">Quarterly taxes for freelancers</a>
+        <a href="schedule-c-expense-categories.html">Schedule C expense categories</a>
+      </nav>
+    </div>
+    <div class="wrap legal">
+      Contractor Ledger 2026 · $29 one-time · personal use, no resale · you keep the 2026 files · no lifetime-access claim. File defect = replace; change of mind = no.
+    </div>
+  </footer>
+  <script src="config.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
